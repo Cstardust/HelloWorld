@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main()
@@ -12,4 +13,11 @@ int main()
     //  a出现的地方已经被编译器替换成10
     cout<<*p<<" "<<a<<" "<<*(&a)<<endl;
     //  20         10       10
+    
+    vector<int> vec(a);
+    for(int i=0;i<10;++i)
+    {
+	 vec.emplace_back(i);
+    }
+
 }

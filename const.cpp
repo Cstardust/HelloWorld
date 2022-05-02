@@ -20,4 +20,6 @@ int main()
 	 vec.emplace_back(i);
     }
 
+    //  ubuntu 添加的注释
+
 }
